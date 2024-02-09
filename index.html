@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: linear-gradient(to right, rgb(30, 255, 221), rgb(9, 72, 63));
+        }
+        b{
+            color: red;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 15px;
+            /* width: 20%; */
+        }
+        fieldset{
+            border: 3px solid rgb(30, 255, 221);
+            border-radius: 10px;
+        }
+        legend{
+            border: 1.5px solid rgb(30, 255, 221);
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: aquamarine;
+        }
+        #submit{
+            background-image: linear-gradient(to right, rgb(30, 255, 221), rgb(9, 72, 63));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: aliceblue;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right, rgb(30, 255, 221), rgb(9, 72, 63));
+        }
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Formulário De Informações Pessoais</legend>
+                    <br>
+                    <label for="inputNome"><b>*</b>Nome</label>
+                    <input type="text" name="Nome" id="inputNome" required>
+                    <br><br>
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" name="Email" id="inputEmail">
+                    <br><br>
+                    <label for="inputData"><b>*</b>Data</label>
+                    <input type="date" name="Data" id="inputData">
+                    <br><br>
+                    <label for="inputTel">Telefone</label>
+                    <input type="tel" name="Telefone" id="inputTel">
+                    <br><br>
+                    <p><b>*</b>Sexo:</p>
+                    <input type="radio" name="Masculino" id="inputMasculino" value="masculino" required>
+                    <label for="inputMasculino">Masculino</label><br><br>
+                    <input type="radio" name="Feminino" id="inputFemenino" value="feminino" required>
+                    <label for="inputFemenino">Feminino</label><br><br>
+                    <input type="radio" name="Outro" id="inputOutro" value="outro" required>
+                    <label for="inputOutro">Outro</label>
+                    <br><br>
+                    <label for="comentario">Comentário</label><br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
